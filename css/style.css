@@ -195,24 +195,44 @@ html {
 
 /*Colores*/
 /*Tipos de letra*/
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
 body {
+  scroll-behavior: smooth;
+  overflow: hidden;
   display: flex;
   background-color: #ae99c4;
 }
 body #contenedor {
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body #contenedor #icon {
-  width: 15rem;
-  height: 15rem;
+body #contenedor .jab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+body #contenedor .jab a {
+  width: 100%;
+  height: 100%;
+}
+body #contenedor .jab a img {
+  width: 100%;
+  height: 100%;
+}
+body #contenedor .jab #icon {
+  width: 70%;
   animation: logo_palpitar 6s ease-in-out infinite, logo 1.5s 1;
   animation-delay: 2s;
 }
-body #contenedor #icon img {
+body #contenedor .jab #icon img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
