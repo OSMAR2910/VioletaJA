@@ -1,0 +1,232 @@
+@import "animaciones";
+@import "carga";
+@import "cursor";
+@import "variables";
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    display: flex;
+    background-color: $Primario;
+        #particles-js {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: -100;
+        }
+    #container {
+        display: flex;
+        #fixed {
+            width: 97%;
+            margin: 1.5%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            a {
+                color: $Blanco;
+                font-size: 2rem;
+            }
+        }
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity:0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+        .modalDialog:target {
+            opacity:1;
+            pointer-events: auto;
+        }
+        .modalDialog > div {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: $Blanco;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+          -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        }
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+        .close:hover { background: $Secundario; }
+        #openModal {
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .redes {
+                    padding: 2% 20%;
+                    border-radius: 10px;
+                    background-color: $Secundario;
+                    text-decoration: none;
+                    color: $Blanco;
+                }
+            }
+        }
+        .P {
+            width: 100vw;
+            height: 100vh;
+            .box {
+                width: 100%;
+                height: 100%;
+            }
+            .boxm {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .margen1 {
+                    width: 98%;
+                    height: 97%;
+                    border: solid 4px $Blanco;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .C1 {
+                        width: 22rem;
+                        height: 25rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h2 {
+                        font-size: 2.7rem;
+                        color: $Blanco;
+                    }
+                    a {
+                        font-size: 75%;
+                        text-decoration: none;
+                        padding: 1.5% 3%;
+                        color: $Blanco;
+                        border-radius: 3rem;
+                        background-color: $Secundario;
+                    }
+                }
+            }
+            .boxm2 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .margen2 {
+                    width: 98%;
+                    height: 97%;
+                    margin-top: 1%;
+                    border: solid 4px $Blanco;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    ul {
+                        width: 40%;
+                        color: $Blanco;
+                        text-align: center;
+                        li {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+        #P1 {
+            .box {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                img {
+                    width: 25%;
+                    border-radius: 100%;
+                }
+                a {
+                    border-radius: 30px;
+                    font-size: 80%;
+                    background-color: $Secundario;
+                    padding: 1.5% 8% 1.5% 8%;
+                    color: $Blanco;
+                    text-decoration: none;
+                }
+            }
+        }
+        #P2 {
+            .box {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    .text1 {
+                        width: 70%;
+                        background-color: transparent;
+                    }
+                    a {
+                        width: 70%;
+                        height: 65%;
+                        div {
+                            width: 100%;
+                            height: 100%;
+                            background-color: $Blanco;
+                            img {
+                                width: 70%;
+                                height: 70%;
+                            }
+                        }
+                    }
+                    div {
+                        background-color: $Blanco;
+                    }
+                    h2 {
+                        color: $Blanco;
+                    }
+                    h3 {
+                        color: $Blanco;
+                    }
+                }
+            }
+        }
+    }
+}
