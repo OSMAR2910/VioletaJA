@@ -11,12 +11,12 @@ body {
     overflow: hidden;
     display: flex;
     background-color: $Primario;
-        #particles-js {
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            z-index: -100;
-        }
+    #particles-js {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -100;
+    }
     #container {
         display: flex;
         #fixed {
@@ -129,11 +129,13 @@ body {
                         }
                     }
                     h2 {
+                        font-family: 'Potta One', cursive;
                         font-size: 2.7rem;
                         color: $Blanco;
                     }
                     a {
-                        font-size: 75%;
+                        font-family: 'Chonburi', cursive;
+                        font-size: 100%;
                         text-decoration: none;
                         padding: 1.5% 3%;
                         color: $Blanco;
@@ -202,6 +204,16 @@ body {
                     .text1 {
                         width: 70%;
                         background-color: transparent;
+                        b {
+                            font-size: 350%;
+                            color: #f2f0ed;
+                            font-family: 'Anton', sans-serif;
+                        }
+                        p {
+                            font-size: 150%;
+                            color: #f2f0ed;
+                            font-family: 'Gruppo', cursive;
+                        }
                     }
                     a {
                         width: 70%;
@@ -223,7 +235,82 @@ body {
                         color: $Blanco;
                     }
                     h3 {
+                        font-family: 'Anton', sans-serif;
                         color: $Blanco;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        #container {
+            #fixed {
+                a {
+                    font-size: 1.6rem;
+                }
+            }
+            .modalDialog > div {
+                width: 300px;
+                height: 300px;
+            }
+            .P {
+                .boxm {
+                    .margen1 {
+                        width: 96%;
+                        height: 98%;
+                        .C1 {
+                            width: 15rem;
+                            height: 18rem;
+                        }
+                        h2 {
+                            font-size: 2rem;
+                        }
+                        a {
+                            font-size: 90%;
+                            padding: 2.5% 10%;
+                        }
+                    }
+                }
+                .boxm2 {
+                    .margen2 {
+                        width: 96%;
+                        height: 98%;
+                        ul {
+                            width: 70%;
+                            font-size: 90%;
+                        }
+                    }
+                }
+            }
+            #P1 {
+                .box {
+                    justify-content: space-evenly;
+                    img {
+                        width: 65%;
+                    }
+                    a {
+                        font-size: 80%;
+                        padding: 3% 15% 3% 15%;
+                    }
+                }
+            }
+            #P2 {
+                .box {
+                    grid-template-columns: repeat(2,1fr);
+                    div {
+                        .text1 {
+                            width: 70%;
+                            b {
+                                font-size: 200%;
+                            }
+                            p {
+                                font-size: 100%;
+                            }
+                        }
+                        a {
+                            width: 90%;
+                            height: 60%;
+                        }
                     }
                 }
             }
