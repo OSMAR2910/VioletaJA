@@ -89,9 +89,15 @@ body {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                background-color: $Primario;
+                border: 2px solid $Blanco;
+                h2 {
+                    color: $Blanco;
+                }
                 .redes {
+                    margin: 5% 0;
                     padding: 2% 20%;
-                    border-radius: 10px;
+                    border-radius: 10rem;
                     background-color: $Secundario;
                     text-decoration: none;
                     color: $Blanco;
@@ -256,7 +262,7 @@ body {
             }
             .modalDialog > div {
                 width: 300px;
-                height: 300px;
+                height: 500px;
             }
             .P {
                 .boxm {
@@ -264,14 +270,14 @@ body {
                         width: 96%;
                         height: 98%;
                         .C1 {
-                            width: 13rem;
-                            height: 16rem;
+                            width: 10rem;
+                            height: 13rem;
                         }
                         h2 {
-                            font-size: 170%;
+                            font-size: 150%;
                         }
                         a {
-                            font-size: 70%;
+                            font-size: 50%;
                             padding: 2.6% 7%;
                         }
                     }
@@ -282,7 +288,7 @@ body {
                         height: 98%;
                         ul {
                             width: 80%;
-                            font-size: 90%;
+                            font-size: 70%;
                             li {
                                 text-align: center;
                             }
@@ -308,7 +314,7 @@ body {
                 align-items: center;
                 .box {
                     grid-template-columns: repeat(2,1fr);
-                    height: 90%;
+                    height:85%;
                     div {
                         .text1 {
                             width: 70%;
@@ -320,9 +326,8 @@ body {
                             }
                         }
                         a {
-                            width: 90%;
-                            height: 60%;
-                            max-height: 10rem;
+                            width: 80%;
+                            height: 8rem;
                         }
                     }
                 }

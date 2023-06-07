@@ -296,10 +296,16 @@ body #container #openModal div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #ae99c3;
+  border: 2px solid #f2f0ed;
+}
+body #container #openModal div h2 {
+  color: #f2f0ed;
 }
 body #container #openModal div .redes {
+  margin: 5% 0;
   padding: 2% 20%;
-  border-radius: 10px;
+  border-radius: 10rem;
   background-color: #816b96;
   text-decoration: none;
   color: #f2f0ed;
@@ -456,21 +462,21 @@ body #container #P2 .box div h3 {
   }
   body #container .modalDialog > div {
     width: 300px;
-    height: 300px;
+    height: 500px;
   }
   body #container .P .boxm .margen1 {
     width: 96%;
     height: 98%;
   }
   body #container .P .boxm .margen1 .C1 {
-    width: 13rem;
-    height: 16rem;
+    width: 10rem;
+    height: 13rem;
   }
   body #container .P .boxm .margen1 h2 {
-    font-size: 170%;
+    font-size: 150%;
   }
   body #container .P .boxm .margen1 a {
-    font-size: 70%;
+    font-size: 50%;
     padding: 2.6% 7%;
   }
   body #container .P .boxm2 .margen2 {
@@ -479,7 +485,7 @@ body #container #P2 .box div h3 {
   }
   body #container .P .boxm2 .margen2 ul {
     width: 80%;
-    font-size: 90%;
+    font-size: 70%;
   }
   body #container .P .boxm2 .margen2 ul li {
     text-align: center;
@@ -501,7 +507,7 @@ body #container #P2 .box div h3 {
   }
   body #container #P2 .box {
     grid-template-columns: repeat(2, 1fr);
-    height: 90%;
+    height: 85%;
   }
   body #container #P2 .box div .text1 {
     width: 70%;
@@ -513,8 +519,7 @@ body #container #P2 .box div h3 {
     font-size: 100%;
   }
   body #container #P2 .box div a {
-    width: 90%;
-    height: 60%;
-    max-height: 10rem;
+    width: 80%;
+    height: 8rem;
   }
 }/*# sourceMappingURL=style.css.map */
