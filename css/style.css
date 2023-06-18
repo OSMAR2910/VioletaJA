@@ -433,8 +433,8 @@ body #container #P2 .box div .text1 a {
   color: #f2f0ed;
   font-family: "Gruppo", cursive;
   background-color: #816b96;
-  border-radius: 1rem;
-  padding: 2% 0%;
+  border-radius: 2rem;
+  padding: 2% 5%;
   border: 1px solid;
 }
 body #container #P2 .box div .div-img {
@@ -444,7 +444,7 @@ body #container #P2 .box div .div-img {
 body #container #P2 .box div .div-img div {
   width: 100%;
   height: 100%;
-  background-image: url("../img/FONDO-R.webp");
+  background-image: url("../img/FONDO-R.png");
   background-attachment: fixed;
 }
 body #container #P2 .box div .div-img div img {
