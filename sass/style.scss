@@ -207,7 +207,7 @@ body {
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    text-align: center;
+                    text-align: center; 
                     .text1 {
                         width: 70%;
                         background-color: transparent;
@@ -221,17 +221,28 @@ body {
                             color: $Blanco;
                             font-family: 'Gruppo', cursive;
                         }
+                        a {
+                            text-decoration: none;
+                            font-size: 100%;
+                            color: $Blanco;
+                            font-family: 'Gruppo', cursive;
+                            background-color: $Secundario;
+                            border-radius: 1rem;
+                            padding: 2% 0%;
+                            border: 1px solid;
+                        }
                     }
-                    a {
+                    .div-img {
                         width: 65%;
                         height: 65%;
                         div {
                             width: 100%;
                             height: 100%;
-                            background-color: $Blanco;
+                            background-image: url("../img/FONDO-R.webp");
+                            background-attachment: fixed;
                             img {
-                                width: 95%;
-                                height: 95%;
+                                width: 98%;
+                                height: 98%;
                             }
                         }
                     }
@@ -319,6 +330,10 @@ body {
                         h3 {
                             font-size: 100%;
                         }
+                        .div-img {
+                            width: 80%;
+                            height: 15rem;
+                        }
                         .text1 {
                             width: 70%;
                             b {
@@ -327,10 +342,11 @@ body {
                             p {
                                 font-size: 150%;
                             }
-                        }
-                        a {
-                            width: 80%;
-                            height: 15rem;
+                            a {
+                                font-size: 100%;
+                                padding: 4% 4%;
+                                border: 1px solid;
+                            }
                         }
                     }
                 }
@@ -392,6 +408,9 @@ body {
                 .box {
                     height:85%;
                     div {
+                        .div-img {
+                            height: 8rem;
+                        }
                         .text1 {
                             b {
                                 font-size: 200%;
@@ -399,9 +418,10 @@ body {
                             p {
                                 font-size: 100%;
                             }
-                        }
-                        a {
-                            height: 8rem;
+                            a {
+                                font-size: 80%;
+                                padding: 5% 10%;
+                            }
                         }
                     }
                 }
